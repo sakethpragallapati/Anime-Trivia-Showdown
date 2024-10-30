@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Completed{% endblock %}
+{% block content %}
+<div class="completed-container">
+    <h2>Quiz Completed!</h2>
+    <p>Your Score: {{ score }} out of {{ total_questions }}</p>
+    <a href="/" class="home-button">Go Back to Home</a>
+    <a href="/quiz?anime={{ anime }}" class="retry-button">Try Again</a>
+</div>
+
+<style>
+    body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .completed-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        background-color: #1c1c1c;
+        text-align: center;
+    }
+
+    .home-button, .retry-button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: #4A90E2;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .home-button:hover, .retry-button:hover {
+        background-color: #357ABD;
+        transform: translateY(-2px);
+    }
+</style>
+{% endblock %}

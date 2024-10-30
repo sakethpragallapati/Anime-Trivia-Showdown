@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Shonen Anime{% endblock %}
+{% block header %}Shonen Anime{% endblock %}
+
+{% block content %}
+<div class="anime-card">
+    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpg" alt="One Piece">
+    <div class="overlay">
+        <h3>One Piece</h3>
+        <p>A young pirate sails to find the ultimate treasure.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="one_piece">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_.jpg" alt="Naruto">
+    <div class="overlay">
+        <h3>Naruto</h3>
+        <p>A ninja strives to become the strongest and protect his village.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="naruto">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://rukminim2.flixcart.com/image/850/1000/kyt0ya80/poster/j/z/q/medium-bleach-anime-series-matte-finish-poster-posterpoint6397-original-imagaybn9ux8adqf.jpeg?q=90&crop=false" alt="Bleach">
+    <div class="overlay">
+        <h3>Bleach</h3>
+        <p>A teenager gains the powers of a Soul Reaper to protect others.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="bleach">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

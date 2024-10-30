@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Genres</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='menupage.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/08/demon-slayer-anime.jpeg" class="card-img-top" alt="Action">
+                    <div class="card-body">
+                        <h5 class="genre-title">Action</h5>
+                        <p class="card-text">Action anime often features intense battles, high stakes, and adrenaline-pumping sequences that keep viewers on the edge of their seats.</p>
+                        <form method="POST">
+                            <button type="submit" name="submit" value="ExploreAction-1" class="btn btn-custom">
+                                Select
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/1595dc2f5bd3654d3d263b4fce60780b118bb31ee3af7a9dc9c99f89ba415934.jpg" class="card-img-top" alt="Shonen">
+                    <div class="card-body">
+                        <h5 class="genre-title">Shonen</h5>
+                        <p class="card-text">Shonen anime typically targets a male audience and often features themes of adventure, friendship, and self-improvement.</p>
+                        <form method="POST">
+                            <button type="submit" name="submit" value="ExploreAction-2" class="btn btn-custom">
+                                Select
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.oneesports.gg/cdn-data/2023/09/ReZero_Anime_Emilia_Subaru_Wallpaper_KeyVisual_Season3-450x253.jpg" class="card-img-top" alt="Isekai">
+                    <div class="card-body">
+                        <h5 class="genre-title">Isekai</h5>
+                        <p class="card-text">Isekai anime typically involves a protagonist being transported to a different world, often with fantasy or sci-fi elements.</p>
+                        <form method="POST">
+                            <button type="submit" name="submit" value="ExploreAction-3" class="btn btn-custom">
+                                Select
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    background-color: #121212; /* Dark background color */
+    color: black; /* Default text color */ 
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+.container {
+    margin-top: 50px; /* Space above the container */
+    background-color: #121212; /* Container background color */
+    padding: 20px; /* Add some padding around the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    transition: box-shadow 0.3s; /* Smooth shadow effect on hover */
+}
+
+.card {
+    color:white;
+    background-color: #151616; /* Card background color */
+    border: none; /* Remove card border */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth scaling and shadow effect */
+    margin: 20px 0; /* Space between cards vertically */
+    height: 100%; /* Allow cards to be responsive */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for the card */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+    background-color:#343a40;/* Change background color on hover */
+}
+
+.card-img-top {
+    height: 250px; /* Fixed height for the image */
+    object-fit: cover; /* Cover the area without distortion */
+    border-top-left-radius: 10px; /* Rounded corners for the image */
+    border-top-right-radius: 10px; /* Rounded corners for the image */
+}
+
+.card-body {
+    display: flex; /* Use flexbox for alignmen*/
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    flex-grow: 1; /* Allow body to grow and take space */
+}
+
+.genre-title {
+    font-weight: bold; /* Make genre title bold */
+    font-size: 1.5rem; /* Genre title font size */
+    margin: 10px 0; /* Space above and below genre title */
+    text-align: center; /* Center align the text */
+    transition: text-shadow 1s; /* Smooth text shadow effect */
+}
+
+.card:hover .genre-title {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Add text shadow on hover */
+    font-size: 1.8rem;
+}
+
+.btn-custom {
+    background-color: #ffffff; /* Button background color */
+    color: #52057B; /* Button text color */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for button */
+    margin-top: 10px; 
+    border-radius: 8px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove default border */
+}
+
+.btn-custom:hover {
+    background-color: #343a40; /* Change button background color on hover */
+    color: white; /* Change button text color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); 
+    font:bold;/* Glowing effect */
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu-item {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

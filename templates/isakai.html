@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Isekai Anime{% endblock %}
+{% block header %}Isekai Anime{% endblock %}
+
+{% block content %}
+<div class="anime-card">
+    <img src="https://m.media-amazon.com/images/M/MV5BNjIwZjM4MWMtOGZiOS00YTllLTkwMWYtZmQxZjM2ZGU4ZmNiXkEyXkFqcGc@._V1_.jpg" alt="Solo Leveling">
+    <div class="overlay">
+        <h3>Solo Leveling</h3>
+        <p>A weak hunter gains powers to level up and grow stronger.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="solo_leveling">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/59dd9785564f46c3cf2a18b38149f5a1.jpe" alt="Overlord">
+    <div class="overlay">
+        <h3>Overlord</h3>
+        <p>A gamer is trapped in a fantasy world as his character.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="overlord">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://m.media-amazon.com/images/M/MV5BN2NhYzU2NDEtYzI1NS00MjgzLThjZGUtOTYxNGJkZjZmNDdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sword Art Online">
+    <div class="overlay">
+        <h3>Sword Art Online</h3>
+        <p>Players are trapped in a virtual world where dying means death.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="sword_art_online">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

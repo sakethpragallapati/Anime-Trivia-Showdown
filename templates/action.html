@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Action Anime{% endblock %}
+{% block header %}Action Anime{% endblock %}
+
+{% block content %}
+<div class="anime-card">
+    <img src="https://m.media-amazon.com/images/I/71s-P7xv0vL._AC_UF894,1000_QL80_.jpg" alt="Attack on Titan">
+    <div class="overlay">
+        <h3>Attack on Titan</h3>
+        <p>Humans fight for survival against terrifying giants.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="attack_on_titan">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Demon Slayer">
+    <div class="overlay">
+        <h3>Demon Slayer</h3>
+        <p>A young boy fights demons to save his sister.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="demon_slayer">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+<div class="anime-card">
+    <img src="https://images-cdn.ubuy.co.in/667d1947ef36b7500453ca2e-my-hero-academia-group-collage-wall.jpg" alt="My Hero Academia">
+    <div class="overlay">
+        <h3>My Hero Academia</h3>
+        <p>In a world of superpowers, a boy dreams of becoming a hero.</p>
+        <form action="/quiz" method="get">
+            <input type="hidden" name="anime" value="my_hero_academia">
+            <button type="submit">Select</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

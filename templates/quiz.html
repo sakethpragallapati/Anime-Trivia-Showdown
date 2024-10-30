@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz - {{ anime | capitalize }}{% endblock %}
+{% block header %}Quiz for {{ anime | capitalize }}{% endblock %}
+
+{% block content %}
+<div class="quiz-container">
+    <h2>Question {{ current_question_index + 1 }} of {{ total_questions }}</h2>
+    <div class="question-box">
+        <p>{{ questions[current_question_index].question }}</p>
+        <form action="/quiz?anime={{ anime }}" method="post">
+            {% for option in questions[current_question_index].options %}
+            <div class="option">
+                <input type="radio" id="{{ option }}" name="answer" value="{{ option }}" required>
+                <label for="{{ option }}">{{ option }}</label>
+            </div>
+            {% endfor %}
+            <input type="hidden" name="current_question" value="{{ current_question_index }}">
+            <div class="button-container">
+                <button type="submit" class="quiz-button">Next</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    width: 400px;
+    height: 400px; /* Kept original height */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background-color: #1c1c1c;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically inside the question box */
+    padding: 15px;
+    margin: auto; /* Center within the container */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: #282828;
+    width: 90%; /* Adjust width as needed */
+}
+
+.option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    appearance: none; /* Remove default radio button styles */
+    width: 20px; /* Custom size */
+    height: 20px; /* Custom size */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #4A90E2; /* Border color */
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Add transitions */
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: #4A90E2; /* Checked background color */
+    border-color: #357ABD; /* Checked border color */
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px; /* Position the dot */
+    left: 4px; /* Position the dot */
+    width: 10px; /* Dot size */
+    height: 10px; /* Dot size */
+    border-radius: 50%; /* Make it circular */
+    background-color: white; /* Dot color */
+}
+
+label {
+    margin-left: 10px; /* Space between radio and label */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.quiz-button {
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-button:hover {
+    background-color: #357ABD;
+}
+</style>
+{% endblock %}

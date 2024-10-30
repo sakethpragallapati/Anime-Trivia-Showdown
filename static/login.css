@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/1001/385/desktop-wallpaper-gfx-shonen-jump.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure it covers the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body::before {
+    content: '';
+    position: absolute; /* Position it absolutely within the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 0, 0, 0.5); /* Adjusted opacity for transparency */
+    z-index: 0; /* Make sure it's behind other content */
+}
+
+.box {
+    width: 400px;         /* Fixed width */
+    height: 400px;       /* Fixed height for equal dimensions */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    background-color: rgba(31, 31, 33, 0.85); /* Slightly less transparent */
+    color: white; /* Set text color to white */
+    position: relative; /* Ensure it's positioned relative to the body */
+    z-index: 1; /* Make sure it appears above the background */
+    text-align: center; /* Center text inside the box */
+    display: flex;       /* Enable flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+}
+
+.title {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 700; /* Use bold weight for the title */
+    font-size: 28px; /* Title font size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.btn-custom {
+    background-color: #FF6F61; /* Coral color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    width: 100%; /* Full width */
+    padding: 10px; /* Increase padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-custom:hover {
+    background-color: #FF4F3B; /* Darker Coral for hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.m-plus-1-uniquifier {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 400; /* Regular weight */
+    font-size: 16px; /* Font size */
+    margin-top: 15px; /* Space above */
+    color: white; /* Ensure text color is white */
+}
+
+a {
+    color: #FF6F61; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    body {
+        overflow: hidden; /* Prevent scrolling */
+    }
+
+    .box {
+        width: auto;
+        height: auto; /* Allow height to adjust based on content */
+        max-height: 90vh; /* Set maximum height to 90% of the viewport height */
+        overflow: auto; /* Allow internal scrolling if necessary */
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .btn-custom {
+        font-size: 1rem; /* Ensure button text is readable */
+    }
+}
