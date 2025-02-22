@@ -65,7 +65,6 @@ Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users 
 - **Select Quiz**: Choose from available anime categories.
 - **Answer Questions**: Participate in the quiz and receive immediate feedback.
 - **View Scores**: Check your scores and compare with previous attempts.
-- **Leaderboard**: See how your scores rank against other players.
 
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your proposed changes.
