@@ -70,9 +70,6 @@ Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users 
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your proposed changes.
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 💡 Acknowledgements
 - Inspired by the love for anime and the desire to create an engaging learning platform.
 - Thanks to all contributors and users for their support.
