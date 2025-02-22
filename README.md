@@ -7,6 +7,7 @@ Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users 
 - **Real-Time Feedback**: Instant validation of answers with scoring.
 - **User Authentication**: Secure login and registration system to track user progress.
 - **Responsive Design**: Optimized for various devices, ensuring a seamless experience on desktops, tablets, and mobiles.
+- **Leaderboard**: Track high scores and compare performance with other players.
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
@@ -28,11 +29,14 @@ Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users 
    ```
 
 3. **Install Dependencies**:
-   Install Flask and other required dependencies manually:
+   Install Flask and other required dependencies:
    ```bash
-   pip install flask
+   pip install -r requirements.txt
    ```
-   If there are additional dependencies, install them accordingly.
+   If `requirements.txt` is not available, install them manually:
+   ```bash
+   pip install flask flask_sqlalchemy flask_migrate flask_login
+   ```
 
 4. **Set Up the Database**:
    - Initialize the SQLite database:
@@ -55,6 +59,7 @@ Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users 
 - **Select Quiz**: Choose from available anime categories.
 - **Answer Questions**: Participate in the quiz and receive immediate feedback.
 - **View Scores**: Check your scores and compare with previous attempts.
+- **Leaderboard**: See how your scores rank against other players.
 
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your proposed changes.
