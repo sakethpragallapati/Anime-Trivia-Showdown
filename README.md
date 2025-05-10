@@ -1,74 +1,66 @@
+
 # Anime Trivia Showdown
 
-Anime Trivia Showdown is a web-based quiz game built with Flask, allowing users to test their knowledge of various anime series through a series of engaging questions. The application provides real-time feedback and scoring to enhance the user experience.
+**Anime Trivia Showdown** is a web-based quiz game built with Flask, allowing users to test their knowledge of various anime series through fun and interactive quizzes. The app offers real-time feedback, score tracking, and a sleek interface.
 
 ## 🚀 Features
-- **Multiple Categories**: Choose from different anime series or genres.
-- **Real-Time Feedback**: Instant validation of answers with scoring.
-- **User Authentication**: Secure login and registration system to track user progress.
-- **Responsive Design**: Optimized for various devices, ensuring a seamless experience on desktops, tablets, and mobiles.
-- **Leaderboard**: Track high scores and compare performance with other players.
+
+- **Multiple Categories**: Choose from various anime series or genres.
+- **Real-Time Feedback**: Immediate validation of answers and scoring.
+- **User Authentication**: Register and log in securely to track progress.
+- **Responsive Design**: Works smoothly on desktops, tablets, and mobiles.
+- **Leaderboard**: View top scores and challenge your friends.
 
 ## 🛠️ Tech Stack
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask)
-- **Database**: SQLite (default) or any preferred relational database
 
-## 📂 Installation
+- **Frontend**: HTML, CSS, JavaScript  
+- **Backend**: Python (Flask)  
+- **Database**: SQLite
 
-1. **Clone the Repository**:
+## 📂 Installation (Windows)
+
+1. **Clone the Repository**  
    ```bash
    git clone https://github.com/sakethpragallapati/Anime-Trivia-Showdown.git
    cd Anime-Trivia-Showdown
    ```
 
-2. **Set Up a Virtual Environment** (recommended):
+2. **Set Up a Virtual Environment**  
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
    ```
 
-3. **Install Dependencies**:
-   Install Flask and other required dependencies:
+3. **Install Dependencies**  
    ```bash
-   pip install flask flask_sqlalchemy flask_migrate flask_login
-   ```
-   If additional dependencies are required, create a `requirements.txt` file:
-   ```bash
-   pip freeze > requirements.txt
+   pip install flask flask_sqlalchemy flask_login
    ```
 
-4. **Set Up the Flask Application**:
-   Ensure Flask can locate the application by setting the environment variable:
+4. **Set Up the Flask App**  
    ```bash
-   export FLASK_APP=app.py  # On Windows: set FLASK_APP=app.py
+   set FLASK_APP=app.py
    ```
 
-5. **Set Up the Database**:
-   - Initialize the SQLite database:
-     ```bash
-     flask db init
-     flask db migrate -m "Initial migration."
-     flask db upgrade
-     ```
-   - Alternatively, configure your preferred database in `config.py`.
-
-6. **Run the Application**:
+5. **Run the Application**  
    ```bash
    flask run
    ```
-   Access the app at `http://127.0.0.1:5000/`.
+   Open `http://127.0.0.1:5000/` in your browser.
 
-## 🎮 Usage
-- **Registration**: Create a new account to start playing.
-- **Login**: Access your account to track your quiz history and scores.
-- **Select Quiz**: Choose from available anime categories.
-- **Answer Questions**: Participate in the quiz and receive immediate feedback.
-- **View Scores**: Check your scores and compare with previous attempts.
+## 🎮 How to Play
+
+1. **Register or Log In**
+2. **Select a Quiz Category**
+3. **Answer Questions One-by-One**
+4. **Get Immediate Feedback**
+5. **Check Your Score**
 
 ## 🤝 Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your proposed changes.
+
+Contributions are welcome!  
+Fork the repo, make your changes, and submit a pull request.
 
 ## 💡 Acknowledgements
-- Inspired by the love for anime and the desire to create an engaging learning platform.
-- Thanks to all contributors and users for their support.
+
+- Built with love for anime and learning.
+- Thanks to all contributors and users for their support!
